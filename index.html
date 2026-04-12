@@ -1,228 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> RS कीलवाले (सरदार जी)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RS कीलवाले (सरदार जी)</title>
 
-<!-- Bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Icons -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-<style>
-    
-body{
-    font-family: 'Poppins', sans-serif;
-    background: #f3f3f3;
-}
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f3f3f3;
+        }
 
-/* Card UI */
-.container-box{
-    max-width: 600px;
-    margin: auto;
-    background: #fff;
-    border-radius: 20px;
-    padding: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    animation: fadeIn 1s ease;
-}
+        /* Card UI */
+        .container-box {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            border-radius: 20px;
+            padding: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease;
+        }
 
-@keyframes fadeIn{
-    from{opacity:0; transform: translateY(20px);}
-    to{opacity:1; transform: translateY(0);}
-}
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
 
-/* Header */
-.header img{
-    width: 70%;
-    border-radius: 15px;
-}
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-.shop-name{
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-.shop-name-1{
-font-size: 30px;
-    font-weight: bold;
-     color: rgb(140, 25, 46);
-    margin-top: 10px;
-}
+        /* Header */
+        .header img {
+            width: 70%;
+            border-radius: 15px;
+        }
 
-/* Product Cards */
-.product{
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: 0.3s;
-}
-.product:hover{
-    transform: scale(1.05);
-}
+        .shop-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
 
-.product img{
-    width: 100%;
-}
+        .shop-name-1 {
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(140, 25, 46);
+            margin-top: 10px;
+        }
 
-/* Buttons */
-.btn-custom{
-    border-radius: 30px;
-    padding: 10px;
-}
+        /* Product Cards */
+        .product {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
 
-/* Contact */
-.contact-box{
-    background: linear-gradient(to right, black, red);
-    color: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 8px 0;
-}
+        .product:hover {
+            transform: scale(1.05);
+        }
 
-/* Social */
-.social i{
-    font-size: 28px;
-    margin: 10px;
-    padding: 15px;
-    border-radius: 50%;
-    background: #eee;
-    transition: 0.3s;
-}
-.social i:hover{
-    transform: scale(1.2);
-}
+        .product img {
+            width: 100%;
+        }
 
+        /* Buttons */
+        .btn-custom {
+            border-radius: 30px;
+            padding: 10px;
+        }
 
-</style>
+        /* Contact */
+        .contact-box {
+            background: linear-gradient(to right, black, red);
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 8px 0;
+        }
+
+        /* Social */
+        .social i {
+            font-size: 28px;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 50%;
+            background: #eee;
+            transition: 0.3s;
+        }
+
+        .social i:hover {
+            transform: scale(1.2);
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="container-box text-center">
+    <div class="container-box text-center">
 
-    <!-- Header -->
-    <div class="header">
-        <div class="shop-name-1"> RS कीलवाले (सरदार जी)</div>
-        <img src="logo.png" alt="Owner">
-     
-    </div>
+        <!-- Header -->
+        <div class="header">
+            <div class="shop-name-1"> RS कीलवाले (सरदार जी)</div>
+            <img src="logo.png" alt="Owner">
 
-    <!-- Save Contact -->
-    <button class="btn btn-success w-100 btn-custom mt-2" onclick="saveContact()">
-        <i class="fa fa-download"></i> Save Contact
-    </button>
-
-    <!-- Products -->
-    <h5 class="mt-4">New Arrivals</h5>
-    <div class="row">
-
-
-         <div class="col-4">
-            <div class="product">
-                <img src="1.png">
-                <p>Nose Pin </p>
-            </div>
         </div>
 
-        <div class="col-4">
-            <div class="product">
-                <img src="2.png">
-                <p>Nath</p>
+        <!-- Save Contact -->
+        <button class="btn btn-success w-100 btn-custom mt-2" onclick="saveContact()">
+            <i class="fa fa-download"></i> Save Contact
+        </button>
+
+        <!-- Products -->
+        <h5 class="mt-4">New Arrivals</h5>
+        <div class="row">
+
+
+            <div class="col-4">
+                <div class="product">
+                    <img src="1.png">
+                    <p>Nose Pin </p>
+                </div>
             </div>
+
+            <div class="col-4">
+                <div class="product">
+                    <img src="2.png">
+                    <p>Nath</p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="product">
+                    <img src="3.jpg">
+                    <p>Nath</p>
+                </div>
+            </div>
+
         </div>
 
-        <div class="col-4">
-            <div class="product">
-                <img src="3.jpg">
-                <p>Nath</p>
+        <br>
+
+        <div class="row">
+
+
+            <div class="col-4">
+                <div class="product">
+                    <img src="1.png">
+                    <p>Nose Pin </p>
+                </div>
             </div>
-        </div>
 
-    </div>
-
-    <br>
-    
-  <div class="row">
-
-
-         <div class="col-4">
-            <div class="product">
-                <img src="1.png">
-                <p>Nose Pin </p>
+            <div class="col-4">
+                <div class="product">
+                    <img src="2.png">
+                    <p>Nath</p>
+                </div>
             </div>
-        </div>
 
-        <div class="col-4">
-            <div class="product">
-                <img src="2.png">
-                <p>Nath</p>
+            <div class="col-4">
+                <div class="product">
+                    <img src="3.jpg">
+                    <p>Nath</p>
+                </div>
             </div>
+
         </div>
+        <br>
 
-        <div class="col-4">
-            <div class="product">
-                <img src="3.jpg">
-                <p>Nath</p>
-            </div>
-        </div>
 
-    </div>
-    <br>
-   
+        <!-- Contact -->
+        <h4 class="mt-4">Get in Touch</h4>
 
-    <!-- Contact -->
-    <h4 class="mt-4">Get in Touch</h4>
-
-    <div class="contact-box">Rajinder Singh Prince : +91 9415517850 </div>
-    <div class="contact-box">Rajinder Singh Prince : +91 9838609591</div>
-
-    <p>
-       Shop No.1. Gorund Floor, Gold Mall, Gol Gate <br>
-        Chowk, Lucknow, Uttar Pradesh
-    </p>
-
-    <!-- Social Media -->
-    <h5>Connect With Us</h5>
-    <div class="social">
-
-        <a href="https://wa.me/9415517850" target="_blank">
-            <i class="fab fa-whatsapp text-success"></i>
+        <a href="tel:9415517850">
+            <div class="contact-box">Rajinder Singh Prince : +91 9415517850 </div>
         </a>
-
-        <a href="https://instagram.com" target="_blank">
-            <i class="fab fa-instagram text-danger"></i>
+        <a href="tel:9415517850">
+            <div class="contact-box">Rajinder Singh Prince : +91 9838609591</div>
         </a>
+        <p>
+            Shop No.1. Gorund Floor, Gold Mall, Gol Gate <br>
+            Chowk, Lucknow, Uttar Pradesh
+        </p>
 
-        <a href="https://facebook.com" target="_blank">
-            <i class="fab fa-facebook text-primary"></i>
-        </a>
+        <!-- Social Media -->
+        <h5>Connect With Us</h5>
+        <div class="social">
+
+            <a href="https://wa.me/9415517850" target="_blank">
+                <i class="fab fa-whatsapp text-success"></i>
+            </a>
+
+            <a href="https://instagram.com" target="_blank">
+                <i class="fab fa-instagram text-danger"></i>
+            </a>
+
+            <a href="https://facebook.com" target="_blank">
+                <i class="fab fa-facebook text-primary"></i>
+            </a>
+
+        </div>
 
     </div>
 
-</div>
-
-<!-- JS -->
-<script>
-function saveContact(){
-    const vcard = `
+    <!-- JS -->
+    <script>
+        function saveContact() {
+            const vcard = `
 BEGIN:VCARD
 VERSION:3.0
 FN:Rajinder Singh Prince
 TEL:9415517850
 END:VCARD`;
 
-    const blob = new Blob([vcard], { type: "text/vcard" });
-    const link = document.createElement("a");
-    link.href = URL.createObjectURL(blob);
-    link.download = "contact.vcf";
-    link.click();
-}
+            const blob = new Blob([vcard], { type: "text/vcard" });
+            const link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = "contact.vcf";
+            link.click();
+        }
 
 
-</script>
+    </script>
 
 </body>
+
 </html>
