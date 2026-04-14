@@ -108,6 +108,13 @@
         a {
             text-decoration: none;
         }
+        .mySlides {display:none}
+
+        .heading-name{
+            font-weight: bold;
+            font-size: 16px;
+            color: rgb(140, 25, 46);
+        }
     </style>
 </head>
 
@@ -135,21 +142,21 @@
             <div class="col-4">
                 <div class="product">
                     <img src="1.png">
-                    <p>Nose Pin </p>
+                    <p class="heading-name">Nose Pin </p>
                 </div>
             </div>
 
             <div class="col-4">
                 <div class="product">
                     <img src="2.png">
-                    <p>Saniya Nath</p>
+                    <p class="heading-name">Plain Bali</p>
                 </div>
             </div>
 
             <div class="col-4">
                 <div class="product">
                     <img src="3.jpg">
-                    <p>Nath</p>
+                    <p class="heading-name">Nose Ring</p>
                 </div>
             </div>
 
@@ -163,26 +170,50 @@
             <div class="col-4">
                 <div class="product">
                     <img src="1.png">
-                    <p>Nose Pin </p>
+                    <p class="heading-name">Om Hay </p>
+                    
                 </div>
             </div>
 
             <div class="col-4">
                 <div class="product">
                     <img src="2.png">
-                    <p>Nath</p>
+                    <p class="heading-name">Bombay Keel</p>
                 </div>
             </div>
 
             <div class="col-4">
                 <div class="product">
                     <img src="3.jpg">
-                    <p>Nath</p>
+                    <p class="heading-name">Jodh Nath</p>
                 </div>
             </div>
 
         </div>
         <br>
+
+        <div class="w3-content" style="max-width:800px">
+            <img class="mySlides" src="1.png" style="width:100%">
+            <img class="mySlides" src="2.png" style="width:100%">
+            <img class="mySlides" src="3.jpg" style="width:100%">
+             <img class="mySlides" src="1.png" style="width:100%">
+            <img class="mySlides" src="2.png" style="width:100%">
+            <img class="mySlides" src="3.jpg" style="width:100%">
+        </div>
+
+        <div class="w3-center">
+            <div class="w3-section">
+                <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+                <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+            </div>
+            <br>
+            <button class="w3-button demo" onclick="currentDiv(1)">1</button>
+            <button class="w3-button demo" onclick="currentDiv(2)">2</button>
+            <button class="w3-button demo" onclick="currentDiv(3)">3</button>
+            <button class="w3-button demo" onclick="currentDiv(4)">4</button>
+            <button class="w3-button demo" onclick="currentDiv(5)">5</button>
+            <button class="w3-button demo" onclick="currentDiv(6)">6</button>
+        </div>
 
 
         <!-- Contact -->
@@ -193,6 +224,9 @@
         </a>
         <a href="tel:9838609591">
             <div class="contact-box">Parvinder Singh : +91 9838609591</div>
+        </a>
+        <a href="tel:9335470813">
+            <div class="contact-box">Mehtab Singh : +91 9335470813</div>
         </a>
         <p>
             Shop No.1. Gorund Floor, Gold Mall, Gol Gate <br>
@@ -236,7 +270,32 @@ END:VCARD`;
             link.click();
         }
 
+var slideIndex = 1;
+showDivs(slideIndex);
 
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
     </script>
 
 </body>
